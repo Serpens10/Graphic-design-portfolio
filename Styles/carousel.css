@@ -1,0 +1,114 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  max-width: fit-content;
+}
+
+.slideshow-container img{
+  max-height: 85vh;
+  max-width: 100%;
+  justify-self: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.arrows {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between; /* Spread buttons */
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 42px;
+  height: 42px;
+  margin-top: -22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-banner);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.prev {
+  transform: translateX(-50px); /* Move left button outside */
+}
+
+.next {
+  right: 0;
+  transform: translateX(50px); /* Move right button outside */
+} 
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: var(--clr-body);
+  background-color: #717171;
+}
+
+
+.text {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--clr-text);
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  .slideshow-container {
+    max-width: 85%;
+  }  
+  
+ 
+}

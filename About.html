@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="Styles/navigation.css">
+    <link rel="stylesheet" href="Styles/middle.css">
+    <link rel="stylesheet" href="Styles/common.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/infinitecarousel.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    
+    <header>
+        <div class="top">
+            <div class="left">
+
+                <a href="About.html">AMOUCHI THAMAZGHA</a>
+                <div class="left_logo">
+                    <img src="Images/myself/mor last colors.png" alt="logo">
+                </div>
+        
+            </div>
+            <div class="right">
+                <div class="nav">
+                    
+                    <a href="index.html">Home</a>
+                    <a href="works.html">My works</a>
+                    <a href="About.html">About me</a>
+                    <a href="Contact.html">Contact me</a> 
+                    
+                </div>
+                <div class="right_logo">
+                    <img src="Images/myself/Morester text only.png" id="text">
+                </div> 
+            </div>
+        </div>    
+           
+              
+        </div>
+    </header>
+
+    <!-- about me section -->
+
+    <div class="headers">
+        
+        <div class="about-me__body">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas tempora impedit quod aliquam nisi vitae vero voluptate numquam non. Repellat tempora rem vitae porro molestiae voluptatum voluptates libero cumque. Quidem, sit rem delectus minima exercitationem magni maxime veniam vel itaque sapiente corporis, pariatur natus enim sint eligendi dolorum saepe! Recusandae, fuga? Illo vitae quod sunt incidunt hic eaque fugit libero beatae, modi atque eos recusandae exercitationem quisquam reiciendis magnam dicta ex tempore similique reprehenderit illum enim nostrum eveniet. Neque, harum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum consequatur alias labore maiores numquam voluptas facere corrupti, illo aspernatur sunt eligendi quia perferendis iure at et! Ratione, officiis inventore natus provident harum accusamus. Ab aperiam, provident quia, sit neque consectetur modi nulla hic dicta, autem doloribus alias nemo beatae laboriosam? Ullam commodi modi obcaecati optio expedita non similique a possimus quos nam ad quod eveniet, asperiores soluta?</p>
+        </div>
+
+        <img src="Images/myself/20230201_161508.jpg" alt="me in drawing class" class="about-img">
+
+    </div>
+    
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          
+          <img src="Images/myself/vector reduced.jpg" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+         
+          <img src="Images/myself/mor edited.png" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="Images/myself/Morester text only.png" style="width:100%">
+          
+        </div>
+        
+    </div>
+    <br>
+
+    <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
+    <div class="footer">
+
+        <div class="navigation-links">
+
+            <div class="navigation">
+                <a href="index.html"><h3>Home</h3></a>
+            </div>
+
+            <div class="navigation">
+                <a href="works.html"><h3>Works</h3></a>
+            </div>
+
+            <div class="navigation">
+                <a href="About.html"><h3>About</h3></a>
+            </div>
+
+            <div class="navigation">
+                <a href="Contact.html"><h3>Contact</h3></a>
+            </div>
+
+        </div>   
+        
+        <div class="social-links">
+
+            <div class="social-icon">
+                <a href="https://www.instagram.com/k.welshe/" target="_blank">
+                     <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                
+            </div>
+
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/thamazgha-amouchi-3446ba239/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+            </div>
+
+            <div class="social-icon">
+                <a href="https://github.com/Serpens10" target="_blank">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+            </div>
+
+            <div class="social-icon">
+                <i class="fa-solid fa-share-from-square" 
+                onclick="copyToClipboard('file:///C:/Users/Serpens10/Documents/GitHub/artportfolio-repo/About.html')"></i>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p> &copy; 2023 Amouchi Thamazgha &#124; All Rights Reserved </p>
+        </div>
+
+    </div>
+
+    <script src="Styles/index.js"></script>
+
+</body>
+</html>
