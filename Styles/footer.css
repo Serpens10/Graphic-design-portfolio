@@ -81,12 +81,18 @@
     
 }
 
-
-
-
-
-.footer > .copyright {
+.footer .copyright {
+   
    color: var(--clr-text);
-   opacity: 85%;
-  
+   opacity: 90%;
+   justify-self: center;
+}
+
+.footer .copyright p {
+    justify-self: center;
+}
+.footer .copyright .disclaimer p {
+    font-family: 'brandon grotesque', sans-serif;
+    line-height: 1.6;
+    font-size: 1.2em;
 }
