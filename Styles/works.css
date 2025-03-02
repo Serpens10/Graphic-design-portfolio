@@ -31,6 +31,7 @@
 }
 .legend a {
     text-decoration: none;
+    color: var(--clr-text);
 }
 .legend h4 {
     font-size: 1.6em;
@@ -44,14 +45,22 @@
 .filler {
     font-size: 1.25em;
 }
+.filler a {
+    color: var(--clr-text);
+}
 
 .work-image {
     display: grid;
-
     padding-bottom: 15px;
 }
+
+.work-image span {
+    justify-self: center;
+    padding-top: 5px;
+}
+
 .work-image img {
-    max-height: 95vh;
+    max-height: 90vh;
 }
 .front-image {
     display: grid;
@@ -88,7 +97,7 @@ padding-bottom: 15px;
     display: flex;
     margin: auto;
     width: 100%;
-    
+    justify-content: center;
     
 }
 
