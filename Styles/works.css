@@ -64,6 +64,7 @@
 .work-image span {
     justify-self: center;
     padding-top: 5px;
+    color: var(--clr-text);
 }
 
 .work-image img {
