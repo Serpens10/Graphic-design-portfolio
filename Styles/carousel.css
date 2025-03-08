@@ -78,6 +78,14 @@
   text-align: center;
 }
 
+.text a {
+  color: var(--clr-text);
+}
+
+.headers h4 a {
+  color: var(--clr-text);
+}
+
 
 .dot {
   cursor: pointer;
