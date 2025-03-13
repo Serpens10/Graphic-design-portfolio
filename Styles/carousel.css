@@ -80,6 +80,7 @@
 
 .text a {
   color: var(--clr-text);
+  text-decoration: none;
 }
 
 .headers h4 a {
