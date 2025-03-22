@@ -575,8 +575,32 @@ form button {
 }
 
 
+.introduction {
+    width: 90%;
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    justify-self: center;
+    align-content: center;
+}
 
+.introduction .intro_img {
+    min-width: 35%;
+    float: right;
+    margin-left: 20px;
+}
 
+.introduction .intro_img_two {
+    min-width: 35%;
+    float: left;
+    margin-right: 20px;
+}
+
+.introduction .intro_text span {
+    font-size: 1.3em;
+    line-height: 38px;
+    letter-spacing: 0.6px;
+}
 
 
 
