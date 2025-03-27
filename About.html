@@ -58,19 +58,6 @@
 
     <!-- about me section -->
 
-    <div class="headers">
-        
-        <div class="about-me__body">
-           <span>Hello! Thank you for your interest in me.</span>
-           <span>My name is Thamazgha, and I'm currently twenty six years old. I can't remember when I first 
-            started making art, but I know for sure that it has always been part of my life. Throughout the years, I've gone through phases
-            in which I've written stories, learned musical instruments, weaved my own clothes by hand and beaded my own accessories. I've worked 
-            with paper, fiber, wood, and all sorts of media through which I could express myself. Needless to say, pen to paper (or pen to tablet, in most showcased art here)
-            remain one of my favorite ways to liberate my artistic visions. 
-           </span>
-        </div>
-
-    </div>
     
     <div class="introduction">
         <div class="intro_text">
@@ -92,6 +79,9 @@
     
     </div>
 
+    <div class="separator" style="height: 2.5rem;"></div>
+    
+
     <div class="introduction">
         <div class="intro_img_two">
             <img src="Images/myself/drawing reduced.jpg" alt="Messiah">
@@ -99,20 +89,21 @@
         </div>
         <div class="intro_text">
             <br>
-            <span style="font-weight: bold;">Hello! Thank you for your interest in me.</span>
-            <br>
-            <br>
-            <span>My name is Thamazgha, and I'm currently twenty six years old. I can't remember when I first 
-            started making art, but I know for sure that it has always been part of my life. Throughout the years, I've gone through phases
-            in which I've written stories, learned musical instruments, weaved my own clothes by hand and beaded my own accessories. I've worked 
-            with paper, fiber, wood, and all sorts of media through which I could express myself. Needless to say, pen to paper (or pen to tablet, in most showcased art here)
-            remain one of my favorite ways to liberate my artistic visions. 
+            
+            <span>After I graduated high school, I joined an oil and gas engineering course at the university of Boumerdes.
+                Nowadays, I can't imagine my life without the mechanical engineering knowledge that I gained throughout my
+                5 year academic journey, but I'm also aware that an engineer is not all who I am, and that I will only truly find happiness
+                when I combine between my two greatest passions in life: Art and Engineering. Following that realization,
+                I decided to enroll in the regional school of fine arts of Oran, and I managed to finish a whole year of the curriculum
+                before personal circumstances pushed me to drop out and move back to my hometown.
             </span>
         </div>
         
     
     </div>
 
+    <!--
+    
     <div class="slideshow-container">
 
         <div class="mySlides fade">
@@ -134,6 +125,8 @@
         </div>
         
     </div>
+    -->
+
     <br>
 
     <div style="text-align:center">
@@ -162,67 +155,68 @@
           dots[slideIndex-1].className += " active";
           setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
-        </script>
+    </script>
 
 
     <div class="footer">
-
-        <div class="navigation-links">
-
-            <div class="navigation">
-                <a href="index.html"><h3>Home</h3></a>
+        <div class="footer_content">
+            <div class="backtop">
+                <div class="btn" onclick="topFunction()" id="myBtn">
+                    <h1>Back To The Top</h1> 
+                </div>
             </div>
+            <div class="separator"></div>
+            <div class="bottom">
+                <div class="left">
+                    <div class="right_logo">
+                        <img src="../Images/myself/Morester text only.png" id="text">
+                    </div> 
+                </div>
+                <div class="right">
+                    <div class="navigation-links">
 
-            <div class="navigation">
-                <a href="works.html"><h3>Works</h3></a>
-            </div>
-
-            <div class="navigation">
-                <a href="About.html"><h3>About</h3></a>
-            </div>
-
-            <div class="navigation">
-                <a href="Contact.html"><h3>Contact</h3></a>
-            </div>
-
-        </div>   
-        
-        <div class="social-links">
-
-            <div class="social-icon">
-                <a href="https://www.instagram.com/k.welshe/" target="_blank">
-                     <i class="fa-brands fa-square-instagram"></i>
-                </a>
+                        <div class="navigation">
+                            <a href="../index.html">Home</a>
+                        </div>
+            
+                        <div class="navigation">
+                            <a href="../works.html">Works</a>
+                        </div>
+            
+                        <div class="navigation">
+                            <a href="../About.html">About</a>
+                        </div>
+            
+                        <div class="navigation">
+                            <a href="../Contact.html">Contact</a>
+                        </div>
+            
+                    </div>  
+                </div>
                 
+            </div>    
+            
+
+            <div class="copyright">
+                <div class="disclaimer">
+                    <p> Disclaimer: This website is actively under construction, content is subject to 
+                        changes and updates. Artworks will be added and substracted as seen fit. 
+                    </p>
+                </div>
+                <div class="disclaimer">
+                    <p> Artwork was created under specific monitor options and colors may differ from screen
+                        to screen and are prone to looking more saturated than originally intended. 
+                    </p>
+                </div>
+                
+                <p> &copy; 2025 Amouchi Thamazgha &#124; All Rights Reserved </p>
             </div>
+            <div class="copyright">
 
-            <div class="social-icon">
-                <a href="https://www.linkedin.com/in/thamazgha-amouchi-3446ba239/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-
-            </div>
-
-            <div class="social-icon">
-                <a href="https://github.com/Serpens10" target="_blank">
-                    <i class="fa-brands fa-square-github"></i>
-                </a>
-            </div>
-
-            <div class="social-icon">
-                <i class="fa-solid fa-share-from-square" 
-                onclick="copyToClipboard('file:///C:/Users/Serpens10/Documents/GitHub/artportfolio-repo/About.html')"></i>
-            </div>
-
-        </div>
-
-        <div class="copyright">
-            <p> &copy; 2023 Amouchi Thamazgha &#124; All Rights Reserved </p>
-        </div>
+        </div>    
 
     </div>
-
-    <script src="Styles/index.js"></script>
+    <script src="../Styles/index.js"></script>
 
 </body>
 </html>

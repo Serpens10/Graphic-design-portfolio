@@ -81,6 +81,7 @@
 .front-image {
     display: grid;
     justify-items: right;
+    align-items: center;
     padding-bottom: 15px;
     max-width: 50%;
 }
@@ -103,7 +104,7 @@
 }
 
 .stacked {
-display: grid;
+display: block;
 width: 95%;
 margin: auto;
 padding-top: 15px;
@@ -143,3 +144,101 @@ padding-bottom: 15px;
 .inbetween {
     width: 40px;
 }
+
+.diminished {
+    display: none;
+    width: 95%;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.diminished .row {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+        
+}
+    
+.diminished .row .work-image {
+    padding-left: 10px;
+    padding-right: 10px;
+        
+        
+}
+.diminished .row .work-image .legend {
+    justify-self: center;
+}    
+
+@media (max-width: 900px) {
+
+    .work-content {
+        width: 95%;
+        display: grid;
+        gap: 10px;
+        margin: auto;
+    }
+    .legend {
+        align-content: center;
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .front-image {
+        display: grid;
+        justify-items: center;
+        gap: 10px;
+        padding-bottom: 15px;
+        max-width: 100%;
+    }
+    .stacked {
+        display: none;
+    }
+    .diminished {
+        display: block;
+    }
+}
+
+@media (max-width: 600px)  {
+
+    .diminished .row {
+        display: grid; 
+        width: 100%;
+    }
+    .diminished .row .work-image {
+        justify-content: center;
+    }
+
+    .stacked .row {
+        display: grid;
+        gap: 10px;
+        margin: auto;
+        width: 100%;
+        
+    }
+    .stacked .row .work-image {
+        justify-content: center;
+    }
+    .work-content {
+        width: 95%;
+        display: grid;
+        gap: 10px;
+        margin: auto;
+    }
+    .legend {
+        align-content: center;
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .front-image {
+        display: grid;
+        justify-items: center;
+        gap: 10px;
+        padding-bottom: 15px;
+        max-width: 100%;
+    }
+    
+ }
