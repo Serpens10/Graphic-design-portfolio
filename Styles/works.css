@@ -22,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     margin: auto;
+    padding-bottom: 20px;
 }
 
 .long_legend {
@@ -189,6 +190,7 @@ padding-bottom: 15px;
     .front-image {
         display: grid;
         justify-items: center;
+        justify-content: center;
         gap: 10px;
         padding-bottom: 15px;
         max-width: 100%;
@@ -199,6 +201,7 @@ padding-bottom: 15px;
     .diminished {
         display: block;
     }
+    
 }
 
 @media (max-width: 600px)  {
@@ -240,5 +243,6 @@ padding-bottom: 15px;
         padding-bottom: 15px;
         max-width: 100%;
     }
+    
     
  }
