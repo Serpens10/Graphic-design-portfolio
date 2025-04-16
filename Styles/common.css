@@ -409,4 +409,15 @@ section {
     }
  }
 
+ .cv {
+    padding: 20px;
+    justify-self: center; 
+    border-style: solid;
+    border-width: 2px;
+    
+ }
+ .cv a {
+    text-decoration: none;
+ }
+
  
