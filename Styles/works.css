@@ -69,7 +69,21 @@
     text-decoration: none;
 }
 
+.front-image span {
+    justify-self: center;
+    padding-top: 5px;
+    color: var(--clr-text);
+    text-decoration: none;
+}
+
 .work-image span a {
+    justify-self: center;
+    padding-top: 5px;
+    color: var(--clr-text);
+    text-decoration: none;
+}
+
+.front-image span a {
     justify-self: center;
     padding-top: 5px;
     color: var(--clr-text);
